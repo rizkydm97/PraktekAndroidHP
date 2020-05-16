@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_hitung.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             val intent  = Intent(this@MainActivity, HitungActivity::class.java)
             startActivity(intent)
         }
-
+            button2.setOnClickListener{
+                val intent  = Intent(this@MainActivity, GameActivity::class.java)
+                startActivity(intent)
+            }
     })
 }}
